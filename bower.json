@@ -1,0 +1,28 @@
+{
+  "name": "petware",
+  "version": "0.0.0",
+  "homepage": "",
+  "authors": [
+    "den <jsbot0001@gmail.com>"
+  ],
+  "description": "drag and drop with local storage",
+  "main": "main.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.3",
+    "angular-local-storage": "~0.1.5"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

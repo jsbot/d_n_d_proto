@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+<head>
+  <title>PetWare</title>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+</head>
+<body ng-controller="dndController">
+
+<h1>Drag and Drop with usage of local storage</h1>
+
+<button class="btn btn-info" type="submit" dnd-draggable data="data" descr="description">Drop me</button>
+<div class="panel panel-default">
+  <div class="panel-heading">Droppable area</div>
+  <div class="panel-body" dnd-droppable drop="dropMethod" drop="dropMethod">
+    <li ng-repeat="item in items">
+      {{item.name}}
+    </li>
+
+  </div>
+</div>
+
+<!-- Angular -->
+<script src="bower_components/angular/angular.js" ></script>
+
+<!--Local Storage-->
+<script type="text/javascript" src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+
+  <!-- APP -->
+  <script src="main.js"></script>
+  <script src="dnd.js"></script>
+
+</body>
+</html>
